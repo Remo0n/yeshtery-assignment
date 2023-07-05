@@ -22,9 +22,12 @@ class ProductCard extends Component {
           <img src="/icons/360.svg" alt="360 vison" />
         </div>
 
-        <div>
-          <h4 className="title">{this.props.product.title}</h4>
-          <p className="description">{this.props.product.description}</p>
+        <div className="footer">
+          <Link to={`/product/${this.props.product.id}`}>
+            <h4 className="title">{this.props.product.title}</h4>
+            <p className="description">{this.props.product.description}</p>
+          </Link>
+
           <img src="/icons/rate.svg" alt="rate" />
           <div className="price">{this.props.product.price} EGP</div>
           <div className="card-btns">

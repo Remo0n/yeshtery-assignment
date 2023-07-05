@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/fonts/Montserrat.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "Poppins", Fallback, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+body.modal-open {
+  overflow: hidden;
+}

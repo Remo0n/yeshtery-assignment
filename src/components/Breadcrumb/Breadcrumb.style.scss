@@ -1,0 +1,25 @@
+.breadcrumb {
+  padding: 0 6rem;
+  list-style: none;
+  background: #000;
+  color: #fff;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: capitalize;
+
+  li {
+    display: inline;
+    font-size: 18px;
+
+    &::before {
+      padding: 8px;
+      color: "#fff";
+      content: "/\00a0";
+    }
+  }
+}

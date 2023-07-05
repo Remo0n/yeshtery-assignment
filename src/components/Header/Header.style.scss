@@ -1,0 +1,59 @@
+.header-container {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.25rem;
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+
+    .menu-icon {
+      margin-inline-end: 1.12rem;
+      cursor: pointer;
+    }
+
+    .logo {
+      width: 11.12225rem;
+      height: 3.25rem;
+      flex-shrink: 0;
+      margin-inline-end: 2.32rem;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin-inline-end: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right-icons {
+    display: flex;
+    .icon-container {
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.5rem;
+      background-color: #f5f5f5;
+      border-radius: 50%;
+      margin-inline-end: 1rem;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .items-count {
+      position: absolute;
+      left: 0.98rem;
+      top: -0.65rem;
+      font-size: 500;
+    }
+  }
+}

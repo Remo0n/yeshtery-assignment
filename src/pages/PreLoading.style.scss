@@ -1,0 +1,46 @@
+.preloading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+  img {
+    width: 20rem;
+  }
+
+  .progress {
+    border-radius: 30px;
+    background-color: #d9d9d9;
+    margin-top: 2rem;
+    width: 20rem;
+  }
+
+  .progress-bar {
+    height: 18px;
+    border-radius: 30px;
+    transition: 0.4s linear;
+    transition-property: width;
+  }
+
+  .progress-moved .progress-bar {
+    background: rgb(148, 62, 62);
+    background: linear-gradient(
+      180deg,
+      rgba(148, 62, 62, 1) 37%,
+      rgba(157, 55, 55, 1) 56.00000000000001%,
+      rgba(166, 49, 49, 1) 68%
+    );
+    animation: progress 2s;
+  }
+
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+.product-wrapper {
+  width: 50%;
+  padding: 4rem;
+
+  .prodcut-header {
+    display: flex;
+    justify-content: space-between;
+
+    .vision {
+      border: solid 1px #e0e0e0;
+      padding: 0.2rem 1.5rem;
+      height: 2rem;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .title {
+    font-size: 1.43875rem;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+  }
+
+  .price-section {
+    margin-top: 0.8rem;
+
+    .current-price {
+      color: #b93c3c;
+      font-size: 1.43875rem;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-variant: small-caps;
+      line-height: 100%;
+      margin-inline-end: 1rem;
+    }
+
+    .original-price {
+      color: #818181;
+      font-size: 1.19894rem;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-variant: small-caps;
+      line-height: 100%;
+      text-decoration: line-through;
+    }
+  }
+
+  .description {
+    overflow: hidden;
+    color: rgba(7, 7, 7, 0.6);
+    font-size: 1.07906rem;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120.5%;
+    text-transform: lowercase;
+    width: 80%;
+  }
+
+  .sizes-section,
+  .colors-section {
+    &.colors {
+      margin-top: 1rem;
+    }
+
+    .title {
+      color: #b93c3c;
+      font-size: 1.31881rem;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .group {
+      display: flex;
+      margin-top: 0.5rem;
+    }
+
+    .size {
+      margin-inline-end: 1rem;
+      display: flex;
+      width: 3.8rem;
+      height: 1.8rem;
+      padding: 0.668rem 1.13044rem;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.41106rem;
+      border: 1.644px solid #c7c7c5;
+
+      &.active {
+        border-color: #b93c3c;
+      }
+    }
+
+    .color {
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      margin-inline-end: 0.7rem;
+
+      &.white {
+        border: solid 1px #000;
+      }
+      &.black {
+        background-color: #000;
+      }
+      &.blue {
+        background-color: #0052d3;
+      }
+      &.yellow {
+        background-color: #fcbc04;
+      }
+    }
+  }
+  .btns-footer {
+    display: flex;
+    margin-top: 2rem;
+    .quantity {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 15%;
+      height: 3.125rem;
+      flex-shrink: 0;
+      border-radius: 0.71938rem;
+      border: 0.708px solid #d9d9d9;
+      padding: 0 1.5rem;
+      margin-inline-end: 1rem;
+
+      .num {
+        color: #3d3d3d;
+        font-size: 1.41688rem;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    .item {
+      display: flex;
+      align-items: center;
+      div {
+        width: 2.8rem;
+        height: 2.8rem;
+        background-color: #fafafa;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      span {
+        color: #707070;
+        font-size: 0.8rem;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
